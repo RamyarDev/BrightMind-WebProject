@@ -15,6 +15,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -71,7 +77,7 @@
       <!-- Links-Section -->
       <div
         id="linksSection"
-        class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in"
+        class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in sm:hidden"
       >
         <!-- Links-Header -->
         <div class="flex justify-between items-center">
@@ -116,7 +122,55 @@
     </section>
     <!-- Header -->
     <section>
-      <div></div>
+      <div class="absolute">
+        <!-- Title -->
+        <div class="flex flex-col items-center justify-center gap-10 py-12">
+          <h1
+            class="font-medium font-[CabinetGrotesk-Bold] text-7xl text-center px-[150px]"
+          >
+            Learn And Grow With Top
+            <span class="text-pale-primary">Online Courses</span>
+          </h1>
+          <p
+            class="font-[CabinetGrotesk-Medium] text-gray-700 text-[18px] text-center w-[550px]"
+          >
+            Discover Top Online courses to upgrade your skills and stay ahead.
+            Learn from experts and enhance your expertise at your own pace.
+          </p>
+          <div class="flex items-center gap-5 font-[CabinetGrotesk-Bold]">
+            <button
+              class="bg-pale-primary rounded-full hover:bg-black text-white px-5 py-4 font-medium transition duration-400 cursor-pointer"
+            >
+              Explore Courses
+            </button>
+            <button
+              class="bg-transparent border-1 border-black rounded-full hover:bg-black hover:text-white text-black px-5 py-4 font-medium transition duration-400 cursor-pointer"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <img
+          class="w-[70px] relative -top-100 left-20"
+          src="assets/Home/67af701a55a8f4a32f888fc6_Hero Vactor.avif"
+          alt=""
+        />
+        <img
+          class="w-[120px] relative -top-120 -right-215"
+          src="assets/Home/67af701acb74e60e725c6099_Hero Vactor 3.avif"
+          alt=""
+        />
+        <img
+          class="w-[110px] relative -top-75 left-20"
+          src="assets/Home/67af701a0c7172a8f2f36af9_Hero Vactor 2.avif"
+          alt=""
+        />
+        <img
+          class="w-[80px] relative -top-100 -right-200"
+          src="assets/Home/67af701a7fe66816db9422cd_Hero Vactor 4.avif"
+          alt=""
+        />
+      </div>
     </section>
     <script type="module" src="dist/app.js"></script>
   </body>
