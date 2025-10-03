@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,46 +7,169 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <section class="relative">
-      <div class="flex items-center justify-between px-8 py-8 border-b-1 border-gray-200">
+      <div
+        class="flex items-center justify-between px-8 py-8 border-b-1 border-gray-200 sm:justify-around md:justify-between"
+      >
         <!-- Logo -->
         <div>
-          <img class="w-[160px]" src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png" alt="headerLogo" />
+          <img
+            class="w-[160px]"
+            src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png"
+            alt="headerLogo"
+          />
+        </div>
+        <!-- (sm-640px) ==> + -->
+        <div>
+          <div class="flex items-center justify-center gap-5 hidden sm:flex">
+            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+              >Home</a
+            >
+            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+              >About</a
+            >
+            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+              >Courses</a
+            >
+            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+              >Blog</a
+            >
+            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+              >Contact</a
+            >
+          </div>
+        </div>
+        <!-- (md-768px) ==> + -->
+        <div class="hidden md:block">
+          <button
+            class="bg-primary text-white px-5 py-3 rounded-full cursor-pointer hover:bg-black transition ease-in lg:px-7"
+          >
+            Cotanct Us
+          </button>
         </div>
         <!-- Links-Menu-Button -->
-        <div id="openLinksSectionBtn" class="flex flex-col items-center gap-1 cursor-pointer">
+        <div
+          id="openLinksSectionBtn"
+          class="flex flex-col items-center gap-1 cursor-pointer sm:hidden"
+        >
           <div class="h-[2px] w-[18px] bg-black rounded-2xl"></div>
           <div class="h-[2px] w-[18px] bg-black rounded-2xl"></div>
           <div class="h-[2px] w-[18px] bg-black rounded-2xl"></div>
         </div>
       </div>
       <!-- Links-Section -->
-      <div id="linksSection" class="bg-white w-[640px] h-screen absolute top-0 -left-[640px] p-5 transition-all">
+      <div
+        id="linksSection"
+        class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in sm:hidden"
+      >
         <!-- Links-Header -->
         <div class="flex justify-between items-center">
           <!-- Logo -->
           <div>
-            <img class="w-[160px]" src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png" alt="headerLogo" />
+            <img
+              class="w-[160px]"
+              src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png"
+              alt="headerLogo"
+            />
           </div>
           <!-- Close-Button -->
-          <div id="closeLinksSectionBtn" class="flex flex-col justify-center items-center cursor-pointer p-5">
-            <div class="h-[1px] w-[25px] bg-black rounded-2xl rotate-45 translate-y-[1px]"></div>
+          <div
+            id="closeLinksSectionBtn"
+            class="flex flex-col justify-center items-center cursor-pointer p-5"
+          >
+            <div
+              class="h-[1px] w-[25px] bg-black rounded-2xl rotate-45 translate-y-[1px]"
+            ></div>
             <div class="h-[1px] w-[25px] bg-black rounded-2xl -rotate-45"></div>
           </div>
         </div>
         <!-- Links -->
         <div class="flex flex-col justify-center gap-5 mt-10">
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#">Home</a>
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#">About</a>
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#">Courses</a>
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#">Blog</a>
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#">Contact</a>
+          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+            >Home</a
+          >
+          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+            >About</a
+          >
+          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+            >Courses</a
+          >
+          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+            >Blog</a
+          >
+          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
+            >Contact</a
+          >
         </div>
+      </div>
+    </section>
+    <!-- Header -->
+    <section>
+      <div class="absolute">
+        <!-- Title -->
+        <div class="flex flex-col items-center justify-center gap-10 py-12">
+          <h1
+            class="font-medium font-[CabinetGrotesk-Bold] text-7xl text-center px-[150px]"
+          >
+            Learn And Grow With Top
+            <span class="text-pale-primary">Online Courses</span>
+          </h1>
+          <p
+            class="font-[CabinetGrotesk-Medium] text-gray-700 text-[18px] text-center w-[550px]"
+          >
+            Discover Top Online courses to upgrade your skills and stay ahead.
+            Learn from experts and enhance your expertise at your own pace.
+          </p>
+          <div class="flex items-center gap-5 font-[CabinetGrotesk-Bold]">
+            <button
+              class="bg-pale-primary rounded-full hover:bg-black text-white px-5 py-4 font-medium transition duration-400 cursor-pointer"
+            >
+              Explore Courses
+            </button>
+            <button
+              class="bg-transparent border-1 border-black rounded-full hover:bg-black hover:text-white text-black px-5 py-4 font-medium transition duration-400 cursor-pointer"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <img
+          class="w-[70px] relative -top-100 left-20"
+          src="assets/Home/67af701a55a8f4a32f888fc6_Hero Vactor.avif"
+          alt=""
+        />
+        <img
+          class="w-[120px] relative -top-120 -right-215"
+          src="assets/Home/67af701acb74e60e725c6099_Hero Vactor 3.avif"
+          alt=""
+        />
+        <img
+          class="w-[110px] relative -top-75 left-20"
+          src="assets/Home/67af701a0c7172a8f2f36af9_Hero Vactor 2.avif"
+          alt=""
+        />
+        <img
+          class="w-[80px] relative -top-100 -right-200"
+          src="assets/Home/67af701a7fe66816db9422cd_Hero Vactor 4.avif"
+          alt=""
+        />
       </div>
     </section>
     <script type="module" src="dist/app.js"></script>

@@ -7,12 +7,12 @@ const linksSection = document.getElementById("linksSection");
 openLinksSectionBtn?.addEventListener("click", () => {
   if (linksSection) {
     linksSection.classList.remove("-left-[640px]");
-    linksSection.classList.add("left-[0px]");
+    linksSection.classList.add("left-0");
   }
 });
 closeLinksSectionBtn?.addEventListener("click", () => {
   if (linksSection) {
-    linksSection.classList.remove("left-[0px]");
+    linksSection.classList.remove("left-0");
     linksSection.classList.add("-left-[640px]");
   }
 });
