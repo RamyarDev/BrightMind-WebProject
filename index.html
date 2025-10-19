@@ -7,169 +7,123 @@
     <link rel="stylesheet" href="src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
     <section class="relative">
-      <div
-        class="flex items-center justify-between px-8 py-8 border-b-1 border-gray-200 sm:justify-around md:justify-between"
-      >
+      <div class="flex items-center justify-between px-8 py-8 border-b-1 border-gray-200 sm:justify-around md:justify-between">
         <!-- Logo -->
         <div>
-          <img
-            class="w-[160px]"
-            src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png"
-            alt="headerLogo"
-          />
+          <img class="w-[160px]" src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png" alt="headerLogo" />
         </div>
         <!-- (sm-640px) ==> + -->
         <div>
-          <div class="flex items-center justify-center gap-5 hidden sm:flex">
-            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-              >Home</a
-            >
-            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-              >About</a
-            >
-            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-              >Courses</a
-            >
-            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-              >Blog</a
-            >
-            <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-              >Contact</a
-            >
+          <div class="flex items-center justify-center gap-5 hidden sm:flex lg:gap-10">
+            <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Home</a>
+            <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">About</a>
+            <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Courses</a>
+            <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Blog</a>
+            <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Contact</a>
           </div>
         </div>
         <!-- (md-768px) ==> + -->
         <div class="hidden md:block">
-          <button
-            class="bg-primary text-white px-5 py-3 rounded-full cursor-pointer hover:bg-black transition ease-in lg:px-7"
-          >
-            Cotanct Us
-          </button>
+          <button class="bg-primary text-white px-5 py-3 rounded-full cursor-pointer hover:bg-black transition ease-in lg:px-7">Cotanct Us</button>
         </div>
         <!-- Links-Menu-Button -->
-        <div
-          id="openLinksSectionBtn"
-          class="flex flex-col items-center gap-1 cursor-pointer sm:hidden"
-        >
+        <div id="openLinksSectionBtn" class="flex flex-col items-center gap-1 cursor-pointer sm:hidden">
           <div class="h-[2px] w-[18px] bg-black rounded-2xl"></div>
           <div class="h-[2px] w-[18px] bg-black rounded-2xl"></div>
           <div class="h-[2px] w-[18px] bg-black rounded-2xl"></div>
         </div>
       </div>
       <!-- Links-Section -->
-      <div
-        id="linksSection"
-        class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in sm:hidden"
-      >
+      <div id="linksSection" class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in sm:hidden">
         <!-- Links-Header -->
         <div class="flex justify-between items-center">
           <!-- Logo -->
           <div>
-            <img
-              class="w-[160px]"
-              src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png"
-              alt="headerLogo"
-            />
+            <img class="w-[160px]" src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png" alt="headerLogo" />
           </div>
           <!-- Close-Button -->
-          <div
-            id="closeLinksSectionBtn"
-            class="flex flex-col justify-center items-center cursor-pointer p-5"
-          >
-            <div
-              class="h-[1px] w-[25px] bg-black rounded-2xl rotate-45 translate-y-[1px]"
-            ></div>
+          <div id="closeLinksSectionBtn" class="flex flex-col justify-center items-center cursor-pointer p-5">
+            <div class="h-[1px] w-[25px] bg-black rounded-2xl rotate-45 translate-y-[1px]"></div>
             <div class="h-[1px] w-[25px] bg-black rounded-2xl -rotate-45"></div>
           </div>
         </div>
         <!-- Links -->
         <div class="flex flex-col justify-center gap-5 mt-10">
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-            >Home</a
-          >
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-            >About</a
-          >
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-            >Courses</a
-          >
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-            >Blog</a
-          >
-          <a class="hover:text-primary font-['Poppins'] font-normal" href="#"
-            >Contact</a
-          >
+          <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Home</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">About</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Courses</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Blog</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] font-normal" href="#">Contact</a>
         </div>
       </div>
     </section>
     <!-- Header -->
     <section>
-      <div class="absolute">
+      <div>
         <!-- Title -->
-        <div class="flex flex-col items-center justify-center gap-10 py-12">
-          <h1
-            class="font-medium font-[CabinetGrotesk-Bold] text-7xl text-center px-[150px]"
-          >
-            Learn And Grow With Top
-            <span class="text-pale-primary">Online Courses</span>
-          </h1>
-          <p
-            class="font-[CabinetGrotesk-Medium] text-gray-700 text-[18px] text-center w-[550px]"
-          >
-            Discover Top Online courses to upgrade your skills and stay ahead.
-            Learn from experts and enhance your expertise at your own pace.
-          </p>
-          <div class="flex items-center gap-5 font-[CabinetGrotesk-Bold]">
-            <button
-              class="bg-pale-primary rounded-full hover:bg-black text-white px-5 py-4 font-medium transition duration-400 cursor-pointer"
-            >
-              Explore Courses
-            </button>
-            <button
-              class="bg-transparent border-1 border-black rounded-full hover:bg-black hover:text-white text-black px-5 py-4 font-medium transition duration-400 cursor-pointer"
-            >
+        <div class="flex flex-col items-center justify-center gap-10 py-14 mt-10">
+          <!-- Texts -->
+          <div class="flex flex-col items-center">
+            <h1 class="text-[50px] w-auto leading-20 text-center font-medium font-[Grotesk-Bold] px-5 sm:text-6xl md:text-7xl md:w-[800px] md:leading-20 lg:w-[1000px] lg:text-8xl lg:leading-30">
+              Learn And Grow With Top
+              <span class="text-pale-primary">Online Courses <span class="hidden md:inline lg:hidden">👨‍💻</span><span class="hidden lg:inline text-7xl select-none">🧠</span></span>
+            </h1>
+            <p class="font-[Grotesk-Medium] text-gray-700 text-[18px] text-center px-5 py-5 sm:w-[600px]">
+              Discover Top Online courses to upgrade your skills and stay ahead. Learn from experts and enhance your expertise at your own pace.
+            </p>
+          </div>
+          <!-- Buttons -->
+          <div class="flex flex-col w-full px-10 items-center gap-4 font-[Grotesk-Bold] sm:flex-row md:w-[450px]">
+            <button class="bg-pale-primary rounded-full hover:bg-black text-white px-5 py-4 font-medium transition duration-400 cursor-pointer w-full">Explore Courses</button>
+            <button class="bg-transparent border-1 border-black rounded-full hover:bg-black hover:text-white text-black px-5 py-4 font-medium transition duration-400 cursor-pointer w-full">
               Contact Us
             </button>
           </div>
         </div>
-        <img
-          class="w-[70px] relative -top-100 left-20"
-          src="assets/Home/67af701a55a8f4a32f888fc6_Hero Vactor.avif"
-          alt=""
-        />
-        <img
-          class="w-[120px] relative -top-120 -right-215"
-          src="assets/Home/67af701acb74e60e725c6099_Hero Vactor 3.avif"
-          alt=""
-        />
-        <img
-          class="w-[110px] relative -top-75 left-20"
-          src="assets/Home/67af701a0c7172a8f2f36af9_Hero Vactor 2.avif"
-          alt=""
-        />
-        <img
-          class="w-[80px] relative -top-100 -right-200"
-          src="assets/Home/67af701a7fe66816db9422cd_Hero Vactor 4.avif"
-          alt=""
-        />
+        <!-- Boxes -->
+        <div class="w-full items-center grid gap-5 p-5 sm:grid-cols-2 h-full lg:grid-cols-4">
+          <!-- Box-1 -->
+          <div class="w-full md:h-full rounded-2xl sm:h-100 col-span-2 lg:col-span-2">
+            <img class="rounded-2xl w-full h-full object-cover" src="assets/Home/67af752e6c01564adb65f75e_Showcase Image-p-1600.webp" alt="img-1" />
+          </div>
+          <div class="w-full h-full flex flex-col sm:flex-row md:flex-col md:col-span-1 col-span-2 gap-5 lg:col-span-1">
+            <!-- Box-2 -->
+            <div class="w-full bg-orange-box rounded-[10px] px-5 py-8 flex flex-col justify-center gap-5 sm:w-1/2 md:w-full md:h-full">
+              <div class="flex items-center">
+                <img class="w-12 border-3 border-white rounded-full" src="assets/Home/67af74aa55a8f4a32f8d00f7_Profile.png" alt="profile-1" />
+                <img class="w-12 border-3 border-white rounded-full -translate-x-3" src="assets/Home/67af79d4fcd4580eb3eccec9_Profile3.png" alt="profile-2" />
+                <img class="w-12 border-3 border-white rounded-full -translate-x-6" src="assets/Home/67af79d4f6535c6ae220c433_Profile2.png" alt="profile-3" />
+                <img class="w-12 border-3 border-white rounded-full -translate-x-9" src="assets/Home/67af795e1227a554f85d4173_Profile1.png" alt="profile-4" />
+              </div>
+              <div>
+                <h1 class="font-[Grotesk-Bold] text-[20px]">We have 40+ Professional Teachers</h1>
+              </div>
+            </div>
+            <!-- Box-3 -->
+            <div class="w-full bg-green-box rounded-[10px] px-5 py-8 flex flex-col justify-center gap-5 sm:w-1/2 md:w-full md:h-full">
+              <div>
+                <h1 class="font-[Grotesk-Bold] text-[20px]">“Believe in yourself, keep learning, and and success will follow.”</h1>
+              </div>
+              <div>
+                <h1 class="font-[Grotesk-Bold] text-[18px]">Mathew S.</h1>
+                <p class="font-[Grotesk-Light]">Quote from our teacher</p>
+              </div>
+            </div>
+          </div>
+          <!-- Box-4 -->
+          <div class="w-full md:h-full col-span-2 md:col-span-1 sm:h-180 lg:col-span-1">
+            <img class="rounded-2xl h-full w-full object-cover" src="assets/Home/67af752e2d01fbb80f633a37_Showcase Image 2.webp" alt="" />
+          </div>
+        </div>
       </div>
     </section>
     <script type="module" src="dist/app.js"></script>
