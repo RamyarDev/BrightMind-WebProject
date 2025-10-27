@@ -14,13 +14,13 @@ const logosSlider = new Swiper(".logos-slider", {
         disableOnInteraction: false,
     },
 });
-const BoxesSlider = new Swiper(".boxes-slider", {
+const coursesSlider = new Swiper(".courses-slider", {
     slidesPerView: 2,
     spaceBetween: 1,
     loop: true,
     navigation: {
-        nextEl: ".custom-next",
-        prevEl: ".custom-prev",
+        nextEl: ".custom-next-courses-slider",
+        prevEl: ".custom-prev-courses-slider",
     },
     autoplay: true,
     breakpoints: {
@@ -35,6 +35,33 @@ const BoxesSlider = new Swiper(".boxes-slider", {
         },
         1024: {
             slidesPerView: 3,
+        },
+    },
+});
+const usersOpinionSlider = new Swiper(".opinions-slider", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+        nextEl: ".custom-next-opinion-slider",
+        prevEl: ".custom-prev-opinion-slider",
+    },
+    autoplay: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 4,
         },
     },
 });

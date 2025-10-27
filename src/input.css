@@ -51,3 +51,7 @@
 .custom-prev {
   display: flex !important;
 }
+.custom-prev-opinion-slider,
+.custom-next-opinion-slider {
+  display: flex !important;
+}
