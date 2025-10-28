@@ -7,8 +7,12 @@ export interface Course {
   instructor: string;
   price: number;
 }
+export interface accordionBoxesTypes {
+  title: string;
+  description: string;
+}
 // Boxes-Data
-export const courses: Course[] = [
+export const coursesData: Course[] = [
   // Box-1
   {
     title: "Complete Digital Marketing Mastery Course",
@@ -68,5 +72,37 @@ export const courses: Course[] = [
     duration: "8h 30m",
     instructor: "Kathryn Murphy",
     price: 62,
+  },
+];
+export const accordionBoxesData: accordionBoxesTypes[] = [
+  // Box-1
+  {
+    title: "What Is BrightMind?",
+    description:
+      " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+  },
+  // Box-2
+  {
+    title: "What Is BrightMind?",
+    description:
+      " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+  },
+  // Box-3
+  {
+    title: "What Is BrightMind?",
+    description:
+      " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+  },
+  // Box-4
+  {
+    title: "What Is BrightMind?",
+    description:
+      " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+  },
+  // Box-5
+  {
+    title: "What Is BrightMind?",
+    description:
+      " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
   },
 ];

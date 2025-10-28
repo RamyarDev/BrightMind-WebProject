@@ -7,5 +7,10 @@ export interface Course {
     instructor: string;
     price: number;
 }
-export declare const courses: Course[];
+export interface accordionBoxesTypes {
+    title: string;
+    description: string;
+}
+export declare const coursesData: Course[];
+export declare const accordionBoxesData: accordionBoxesTypes[];
 //# sourceMappingURL=data.d.ts.map

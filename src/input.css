@@ -12,6 +12,11 @@
   --color-pale-yellow-box: oklch(0.9869 0.0214 95.28);
   --breakpoint-fullscreen: 1400px;
 }
+@layer components {
+  .accordionOn {
+    height: fit-content;
+  }
+}
 
 @font-face {
   font-family: Grotesk-Black;

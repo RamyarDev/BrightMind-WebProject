@@ -1,5 +1,5 @@
 // Boxes-Data
-export const courses = [
+export const coursesData = [
     // Box-1
     {
         title: "Complete Digital Marketing Mastery Course",
@@ -59,6 +59,33 @@ export const courses = [
         duration: "8h 30m",
         instructor: "Kathryn Murphy",
         price: 62,
+    },
+];
+export const accordionBoxesData = [
+    // Box-1
+    {
+        title: "What Is BrightMind?",
+        description: " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+    },
+    // Box-2
+    {
+        title: "What Is BrightMind?",
+        description: " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+    },
+    // Box-3
+    {
+        title: "What Is BrightMind?",
+        description: " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+    },
+    // Box-4
+    {
+        title: "What Is BrightMind?",
+        description: " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+    },
+    // Box-5
+    {
+        title: "What Is BrightMind?",
+        description: " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
     },
 ];
 //# sourceMappingURL=data.js.map

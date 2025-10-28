@@ -1,6 +1,7 @@
 // @ts-ignore
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
-import {courses} from "./data.js";
+import {coursesData} from "./data.js";
+import {accordionBoxesData} from "./data.js";
 
 const logosSlider = new Swiper(".logos-slider", {
   slidesPerView: 4,
@@ -72,6 +73,7 @@ const openLinksSectionBtn = document.getElementById("openLinksSectionBtn");
 const closeLinksSectionBtn = document.getElementById("closeLinksSectionBtn");
 const linksSection = document.getElementById("linksSection");
 const courseContainer = document.getElementById("course-container");
+const accordionParent = document.getElementById("AccordionParent");
 
 //Close & Open Links Menu Logic
 openLinksSectionBtn?.addEventListener("click", () => {
@@ -86,8 +88,8 @@ closeLinksSectionBtn?.addEventListener("click", () => {
     linksSection.classList.add("-left-[640px]");
   }
 });
-
-courses.forEach((course, index) => {
+// Create Courses Box
+coursesData.forEach((course, index) => {
   const box = document.createElement("div");
   box.classList.add("bg-white", "rounded-2xl", "p-4", "hover:scale-[101%]", "transition", "cursor-pointer");
   box.innerHTML = `
@@ -126,4 +128,43 @@ courses.forEach((course, index) => {
             </div>
           </div>`;
   courseContainer?.appendChild(box);
+});
+accordionBoxesData.forEach((boxData) => {
+  const box = document.createElement("div");
+  box.className = " h-20 overflow-hidden bg-gray-50 rounded-2xl p-5 mx-5 cursor-pointer shadow-lg transition-all boxElm";
+  box.innerHTML = `<div>
+  <div class="flex  items-center justify-between pb-5 pt-1">
+  <h1 class="text-3xl font-[Grotesk-Bold]">${boxData.title}</h1>
+  <i class="fa-solid fa-plus text-black text-2xl iconElm transition-transform"></i>
+  </div>
+  <div>
+  <p class="font-[Grotesk-Medium] text-center">
+  ${boxData.description}
+  </p>
+  </div>
+  </div>`;
+  accordionParent?.appendChild(box);
+});
+
+let boxes = document.querySelectorAll(".boxElm");
+boxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    let icon = box.querySelector(".iconElm") as HTMLElement;
+    boxes.forEach((b) => {
+      if (b !== box) {
+        b.classList.remove("h-50");
+        b.classList.remove("bg-pale-primary");
+        b.classList.remove("text-white");
+        b.classList.add("h-20");
+        const otherIcon = b.querySelector(".iconElm") as HTMLElement;
+        otherIcon.classList.remove("rotate-45");
+        otherIcon.classList.remove("text-white");
+      }
+    });
+    box.classList.toggle("h-50");
+    box.classList.toggle("bg-pale-primary");
+    box.classList.toggle("text-white");
+    icon.classList.toggle("rotate-45");
+    icon.classList.toggle("text-white");
+  });
 });
