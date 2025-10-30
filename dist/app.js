@@ -130,7 +130,7 @@ accordionBoxesData.forEach((boxData) => {
     box.className = " h-20 overflow-hidden bg-gray-50 rounded-2xl p-5 mx-5 cursor-pointer shadow-lg transition-all boxElm";
     box.innerHTML = `<div>
   <div class="flex  items-center justify-between pb-5 pt-1">
-  <h1 class="text-3xl font-[Grotesk-Bold]">${boxData.title}</h1>
+  <h1 class="text-3xl font-[Grotesk-Bold] select-none">${boxData.title}</h1>
   <i class="fa-solid fa-plus text-black text-2xl iconElm transition-transform"></i>
   </div>
   <div>
