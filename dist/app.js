@@ -2,6 +2,7 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 import { coursesData } from "./data.js";
 import { accordionBoxesData } from "./data.js";
+import { expertTeamData } from "./data.js";
 const logosSlider = new Swiper(".logos-slider", {
     slidesPerView: 4,
     spaceBetween: 20,
@@ -68,20 +69,21 @@ const usersOpinionSlider = new Swiper(".opinions-slider", {
 });
 const openLinksSectionBtn = document.getElementById("openLinksSectionBtn");
 const closeLinksSectionBtn = document.getElementById("closeLinksSectionBtn");
-const linksSection = document.getElementById("linksSection");
+const linksSectionContainer = document.getElementById("linksSectionContainer");
 const courseContainer = document.getElementById("course-container");
 const accordionParent = document.getElementById("AccordionParent");
+const expertTeamBoxes = document.getElementById("expertTeamBoxes");
 //Close & Open Links Menu Logic
 openLinksSectionBtn?.addEventListener("click", () => {
-    if (linksSection) {
-        linksSection.classList.remove("-left-[640px]");
-        linksSection.classList.add("left-0");
+    if (linksSectionContainer) {
+        linksSectionContainer.classList.remove("-left-[640px]");
+        linksSectionContainer.classList.add("left-0");
     }
 });
 closeLinksSectionBtn?.addEventListener("click", () => {
-    if (linksSection) {
-        linksSection.classList.remove("left-0");
-        linksSection.classList.add("-left-[640px]");
+    if (linksSectionContainer) {
+        linksSectionContainer.classList.remove("left-0");
+        linksSectionContainer.classList.add("-left-[640px]");
     }
 });
 // Create Courses Box
@@ -162,5 +164,40 @@ boxes.forEach((box) => {
         icon.classList.toggle("rotate-45");
         icon.classList.toggle("text-white");
     });
+});
+const links = document.querySelectorAll(".nav-link");
+const currentFile = window.location.pathname.split("/").pop(); // فقط اسم فایل
+links.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (href) {
+        // بررسی می‌کنیم null نباشه
+        const linkFile = href.split("/").pop();
+        if (currentFile === linkFile) {
+            link.classList.add("text-primary"); // رنگ لینک فعلی
+        }
+    }
+});
+expertTeamData.forEach((boxData) => {
+    const box = document.createElement("div");
+    box.innerHTML = `
+  <div class="p-5 rounded-2xl bg-white hover:scale-105 hover:rotate-1 transition-all duration-200">
+          <!-- Image -->
+          <img class="rounded-2xl" src="${boxData.image}" alt="Team" />
+          <!-- Name & Career -->
+          <div>
+            <div class="py-5">
+              <h1 class="text-lg font-[Grotesk-Bold]">${boxData.name}</h1>
+              <p class="font-[Grotesk-Medium]">${boxData.career}</p>
+            </div>
+            <!-- Icons -->
+            <div class="text-2xl flex items-center gap-5">
+              <i class="cursor-pointer fa-brands fa-instagram text-gray-600 hover:text-primary transition-all duration-200"></i>
+              <i class="cursor-pointer fa-brands fa-facebook text-gray-600 hover:text-primary transition-all duration-200"></i>
+              <i class="cursor-pointer fa-brands fa-twitter text-gray-600 hover:text-primary transition-all duration-200"></i>
+              <i class="cursor-pointer fa-brands fa-linkedin text-gray-600 hover:text-primary transition-all duration-200"></i>
+            </div>
+          </div>
+        </div>`;
+    expertTeamBoxes?.appendChild(box);
 });
 //# sourceMappingURL=app.js.map

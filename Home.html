@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BrightMind</title>
     <link rel="stylesheet" href="src/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
@@ -25,11 +20,11 @@
 
         <!-- Navigation Links (visible on sm+) -->
         <nav class="hidden sm:flex items-center justify-center gap-5 lg:gap-10">
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Home</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">About</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Courses</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Blog</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Contact</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Home.html">Home</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="About.html">About</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Courses.html">Courses</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Blog.html">Blog</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Contact.html">Contact</a>
         </nav>
 
         <!-- Contact Button (visible on md+) -->
@@ -46,7 +41,7 @@
       </div>
 
       <!-- Mobile Links Section -->
-      <div id="linksSection" class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in sm:hidden">
+      <div id="linksSectionContainer" class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in sm:hidden">
         <!-- Mobile Links Header -->
         <div class="flex justify-between items-center">
           <!-- Logo -->
@@ -55,21 +50,21 @@
           </div>
           <!-- Close Button -->
           <div id="closeLinksSectionBtn" class="flex justify-center items-center cursor-pointer p-5">
-            <span class="h-[1px] w-[25px] bg-black rounded-2xl rotate-45 translate-y-[1px]"></span>
-            <span class="h-[1px] w-[25px] bg-black rounded-2xl -rotate-45"></span>
+            <i class="fa-solid fa-xmark text-2xl text-black"></i>
           </div>
         </div>
 
         <!-- Mobile Navigation Links -->
         <nav class="flex flex-col justify-center gap-5 mt-10">
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Home</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">About</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Courses</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Blog</a>
-          <a class="hover:text-primary font-[Grotesk-Medium]" href="#">Contact</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Home.html">Home</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="About.html">About</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Courses.html">Courses</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Blog.html">Blog</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Contact.html">Contact</a>
         </nav>
       </div>
     </section>
+
     <!-- Header Section -->
     <section class="fullscreen:px-60 fullscreen:py-20">
       <div>
@@ -134,6 +129,7 @@
         </div>
       </div>
     </section>
+
     <!-- Scrollbar Section -->
     <section class="fullscreen:px-60 fullscreen:py-20">
       <p class="text-2xl text-center font-[Grotesk-Medium] py-5">Featured by popular companies in the industry.</p>
@@ -165,6 +161,7 @@
         </div>
       </div>
     </section>
+
     <!-- Courses Slider Section -->
     <section class="fullscreen:px-60 fullscreen:py-20">
       <div class="swiper courses-slider">
@@ -227,6 +224,7 @@
         </div>
       </div>
     </section>
+
     <!-- Most Popular Courses Section -->
     <section class="bg-gray-100 pb-20 px-5 fullscreen:px-60 fullscreen:py-20">
       <!-- Title -->
@@ -421,6 +419,7 @@
         </div>
       </div>
     </section>
+
     <!-- Frequently Asked Questions Section -->
     <section class="px-5 fullscreen:px-60 py-10">
       <div class="flex flex-col md:flex-row justify-center gap-10">
@@ -439,15 +438,15 @@
       <div class="px-5 flex flex-col justify-center gap-10">
         <!-- Box -->
         <div class="h-70 bg-pale-primary rounded-2xl flex flex-col items-center justify-center gap-10 relative lg:h-80">
-          <img class="w-20 absolute left-8 top-5 hidden sm:block" src="assets/Home/67af701a55a8f4a32f888fc6_Hero Vactor.avif" alt="icon" />
-          <img class="w-20 absolute right-10 top-5 hidden lg:right-20 sm:block" src="assets/Home/67af701a0c7172a8f2f36af9_Hero Vactor 2.avif" alt="icon" />
+          <img class="w-20 absolute left-8 top-5 hidden sm:block animate-pulse" src="assets/Home/67af701a55a8f4a32f888fc6_Hero Vactor.avif" alt="icon" />
+          <img class="w-20 absolute right-10 top-5 hidden lg:right-20 sm:block animate-pulse" src="assets/Home/67af701a0c7172a8f2f36af9_Hero Vactor 2.avif" alt="icon" />
           <h1 class="text-3xl text-white text-center font-[Grotesk-Bold]">
             Take the First Step – Start <br />
             Learning Today!
           </h1>
           <button class="w-40 px-5 py-4 rounded-full font-[Grotesk-bold] bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300">Contact Us</button>
-          <img class="w-20 absolute right-5 bottom-5 hidden sm:block" src="assets/Home/67af701a7fe66816db9422cd_Hero Vactor 4.avif" alt="icon" />
-          <img class="w-20 absolute left-5 bottom-10 hidden lg:left-30 sm:block" src="assets/Home/67af701acb74e60e725c6099_Hero Vactor 3.avif" alt="icon" />
+          <img class="w-20 absolute right-5 bottom-5 hidden sm:block animate-pulse" src="assets/Home/67af701a7fe66816db9422cd_Hero Vactor 4.avif" alt="icon" />
+          <img class="w-20 absolute left-5 bottom-10 hidden lg:left-30 sm:block animate-pulse" src="assets/Home/67af701acb74e60e725c6099_Hero Vactor 3.avif" alt="icon" />
         </div>
         <!-- information -->
         <div class="flex flex-col gap-5 md:items-center">

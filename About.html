@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrightMind</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <section class="relative">
+      <!-- Main Navbar -->
+      <div class="flex items-center justify-between px-8 py-8 border-b border-gray-200 sm:justify-around md:justify-between">
+        <!-- Logo -->
+        <div>
+          <img class="w-[160px]" src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png" alt="BrightMind Logo" />
+        </div>
+
+        <!-- Navigation Links (visible on sm+) -->
+        <nav class="hidden sm:flex items-center justify-center gap-5 lg:gap-10">
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Home.html">Home</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="About.html">About</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Courses.html">Courses</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Blog.html">Blog</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Contact.html">Contact</a>
+        </nav>
+
+        <!-- Contact Button (visible on md+) -->
+        <div class="hidden md:block">
+          <button class="bg-primary text-white px-5 py-3 rounded-full cursor-pointer hover:bg-black transition ease-in lg:px-7">Contact Us</button>
+        </div>
+
+        <!-- Mobile Menu Button (visible on sm-) -->
+        <div id="openLinksSectionBtn" class="flex flex-col items-center gap-1 cursor-pointer sm:hidden">
+          <span class="h-[2px] w-[18px] bg-black rounded-2xl"></span>
+          <span class="h-[2px] w-[18px] bg-black rounded-2xl"></span>
+          <span class="h-[2px] w-[18px] bg-black rounded-2xl"></span>
+        </div>
+      </div>
+
+      <!-- Mobile Links Section -->
+      <div id="linksSectionContainer" class="bg-white w-full h-screen absolute top-0 -left-[640px] px-10 py-5 transition-all ease-in sm:hidden">
+        <!-- Mobile Links Header -->
+        <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div>
+            <img class="w-[160px]" src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png" alt="BrightMind Logo" />
+          </div>
+          <!-- Close Button -->
+          <div id="closeLinksSectionBtn" class="flex justify-center items-center cursor-pointer p-5">
+            <i class="fa-solid fa-xmark text-2xl text-black"></i>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Links -->
+        <nav class="flex flex-col justify-center gap-5 mt-10">
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Home.html">Home</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="About.html">About</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Courses.html">Courses</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Blog.html">Blog</a>
+          <a class="hover:text-primary font-[Grotesk-Medium] nav-link" href="Contact.html">Contact</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Header Section -->
+    <section class="px-5 py-20 fullscreen:px-60 fullscreen:py-20">
+      <!-- Title -->
+      <div class="flex flex-col items-center justify-center gap-5 py-10">
+        <h1 class="text-5xl font-[Grotesk-Bold] lg:text-7xl">About <span class="text-pale-primary">BrightMind</span></h1>
+        <p class="max-w-140 text-[18px] text-center font-[Grotesk-Medium]">BrightMind empowers learners with expert-led courses to grow skills, advance careers, and achieve success.</p>
+        <img class="w-full rounded-lg lg:max-w-300" src="assets/About/67d06b210cee33a5ea7b906b_About Thumbnail-p-1600.avif" alt="Thumbnail" />
+      </div>
+      <!-- BrightMind Information -->
+      <div class="flex items-center justify-between sm:justify-around lg:justify-around">
+        <div class="flex flex-col gap-10 lg:flex-row">
+          <div class="text-center py-2">
+            <h1 class="text-pale-primary text-5xl font-[Grotesk-Bold]">100,000+</h1>
+            <p class="font-[Grotesk-Medium] text-[18px]">Students Enrolled</p>
+          </div>
+          <div class="text-center py-2">
+            <h1 class="text-pale-primary text-5xl font-[Grotesk-Bold]">67,000+</h1>
+            <p class="font-[Grotesk-Medium] text-[18px]">Students community</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-10 lg:flex-row">
+          <div class="text-center py-2">
+            <h1 class="text-pale-primary text-5xl font-[Grotesk-Bold]">5,000+</h1>
+            <p class="font-[Grotesk-Medium] text-[18px]">Five-star reviews</p>
+          </div>
+          <div class="text-center py-2">
+            <h1 class="text-pale-primary text-5xl font-[Grotesk-Bold]">15,000+</h1>
+            <p class="font-[Grotesk-Medium] text-[18px]">Job placement</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Core Values Section -->
+    <section class="px-5 py-20 fullscreen:px-60 fullscreen:py-20">
+      <!-- Title -->
+      <h1 class="text-center text-4xl font-[Grotesk-Bold] py-15 sm:text-5xl">Our Core <span class="text-pale-primary">Values</span></h1>
+      <!-- Boxes -->
+      <div class="flex flex-col gap-5 sm:grid sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Box-1 -->
+        <div class="h-50 p-5 bg-pale-purple-box rounded-lg flex flex-col justify-between">
+          <div>
+            <img src="assets/About/67b1d30e5c80ce0e3e418b69_Core Values (2).svg" alt="Core Values" />
+          </div>
+          <div>
+            <h1 class="text-[18px] font-[Grotesk-Bold]">Community First</h1>
+            <p class="font-[Grotesk-Light]">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+        <!-- Box-2 -->
+        <div class="h-50 p-5 bg-pale-orange-box rounded-lg flex flex-col justify-between">
+          <div>
+            <img src="assets/About/67b1d30ec2f5e8f4b73ac91e_Core Values (3).svg" alt="Core Values" />
+          </div>
+          <div>
+            <h1 class="text-[18px] font-[Grotesk-Bold]">Cost-effectiveness</h1>
+            <p class="font-[Grotesk-Light]">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+        <!-- Box-3 -->
+        <div class="h-50 p-5 bg-pale-green-box rounded-lg flex flex-col justify-between">
+          <div>
+            <img src="assets/About/67b1d30e0649fa2a9080a66a_Core Values (4).svg" alt="Core Values" />
+          </div>
+          <div>
+            <h1 class="text-[18px] font-[Grotesk-Bold]">Course accessibility</h1>
+            <p class="font-[Grotesk-Light]">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+        <!-- Box-4 -->
+        <div class="h-50 p-5 bg-pale-yellow-box rounded-lg flex flex-col justify-between">
+          <div>
+            <img src="assets/About/67b1d30ecbe620c9766e151b_Core Values (1).svg" alt="Core Values" />
+          </div>
+          <div>
+            <h1 class="text-[18px] font-[Grotesk-Bold]">Personalized learning</h1>
+            <p class="font-[Grotesk-Light]">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inspiring Journey Section -->
+    <section class="px-5 py-20 fullscreen:px-60 fullscreen:py-20">
+      <div class="flex flex-col items-center gap-5 sm:items-start md:flex-row lg:items-center fullscreen:gap-10">
+        <div>
+          <!-- Description -->
+          <div>
+            <h1 class="text-3xl font-[Grotesk-Bold] sm:text-4xl lg:text-5xl"><span class="text-pale-primary">Inspiring Journey</span> of BrightMind’s Growth</h1>
+            <p class="text-lg font-[Grotesk-Medium] py-5">
+              BrightMind started with a vision to make learning accessible and impactful. Our expert-led courses empower individuals to gain skills, grow careers, and achieve success.
+            </p>
+          </div>
+          <!-- BrightMind Features -->
+          <div>
+            <div class="flex flex-col gap-5">
+              <div class="flex items-center gap-5">
+                <i class="fa-solid fa-circle-check text-primary text-2xl"></i>
+                <p class="text-[17px] font-[Grotesk-Bold]">Expert-led, practical courses for all skill levels.</p>
+              </div>
+              <div class="flex items-center gap-5">
+                <i class="fa-solid fa-circle-check text-primary text-2xl"></i>
+                <p class="text-[17px] font-[Grotesk-Bold]">Flexible learning anytime, anywhere.</p>
+              </div>
+              <div class="flex items-center gap-5">
+                <i class="fa-solid fa-circle-check text-primary text-2xl"></i>
+                <p class="text-[17px] font-[Grotesk-Bold]">Join a community of passionate learners.</p>
+              </div>
+              <div class="flex items-center gap-5">
+                <i class="fa-solid fa-circle-check text-primary text-2xl"></i>
+                <p class="text-[17px] font-[Grotesk-Bold]">Career-focused skills for real-world success.</p>
+              </div>
+            </div>
+            <button class="w-full px-5 py-4 my-5 rounded-full text-white bg-pale-primary font-[Grotesk-Bold] cursor-pointer hover:bg-black transition-all duration-200 sm:w-1/3 md:w-1/2 md:px-2">
+              Explore Courses
+            </button>
+          </div>
+        </div>
+        <div class="max-w-[580px] sticky top-0 lg:static">
+          <img class="w-full h-full rounded-2xl" src="assets/About/67b1d61e01159c1df6397ebf_Inspiring Journey-p-1600.webp" alt="Choose" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose BrightMind Section-->
+    <section class="px-5 py-20 fullscreen:px-60 fullscreen:py-20">
+      <div class="flex flex-col items-center gap-5 sm:items-start md:flex-row-reverse lg:items-center fullscreen:gap-10">
+        <div>
+          <!-- Description -->
+          <div>
+            <h1 class="text-3xl font-[Grotesk-Bold] sm:text-4xl lg:text-5xl">Why Choose BrightMind <span class="text-pale-primary">Training?</span></h1>
+            <p class="text-lg font-[Grotesk-Medium] py-5">
+              Our flexible learning approach, practical lessons, and industry-relevant content empower you to gain skills, grow your career, and achieve your goals. Join thousands of learners who
+              trust BrightMind for their professional growth!
+            </p>
+          </div>
+          <!-- BrightMind Features -->
+          <div>
+            <div class="flex items-center gap-5">
+              <i class="fa-solid fa-circle-check text-primary text-2xl"></i>
+              <p class="text-[17px] font-[Grotesk-Bold]">Learn from industry professionals with real-world experience.</p>
+            </div>
+            <div class="flex items-center gap-5 py-5">
+              <i class="fa-solid fa-circle-check text-primary text-2xl"></i>
+              <p class="text-[17px] font-[Grotesk-Bold]">Study anytime, anywhere, at your own pace.</p>
+            </div>
+            <div class="flex items-center gap-5">
+              <i class="fa-solid fa-circle-check text-primary text-2xl"></i>
+              <p class="text-[17px] font-[Grotesk-Bold]">Gain practical knowledge to advance in your field.</p>
+            </div>
+            <button class="w-full px-5 py-4 my-5 rounded-full text-white bg-pale-primary font-[Grotesk-Bold] cursor-pointer hover:bg-black transition-all duration-200 sm:w-1/3 md:w-1/2">
+              Explore Courses
+            </button>
+          </div>
+        </div>
+        <div class="max-w-[580px] sticky top-0">
+          <img class="w-full h-full rounded-2xl" src="assets/About/67b1d61e7fe8153789aa4b9e_Why Choose-p-1600.webp" alt="Choose" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet Our Expert Team Section -->
+    <section class="bg-gray-50 px-5 py-20 fullscreen:px-60 fullscreen:py-20">
+      <h1 class="text-4xl py-5 text-center font-[Grotesk-Bold] md:text-5xl select-none">Meet Our <span class="text-pale-primary">Expert Team</span></h1>
+      <!-- Boxes -->
+      <div id="expertTeamBoxes" class="flex flex-col sm:grid grid-cols-2 gap-5 md:grid-cols-3"></div>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section class="px-5 fullscreen:px-60 py-10">
+      <div class="flex flex-col md:flex-row justify-center gap-10">
+        <!-- Title -->
+        <div class="md:w-1/2">
+          <h1 class="sticky top-0 text-3xl sm:text-4xl lg:text-6xl font-[Grotesk-Bold] text-center py-5">Frequently Asked <span class="text-pale-primary">Questions</span></h1>
+        </div>
+
+        <!-- Accordion Menu -->
+        <div id="AccordionParent" class="flex flex-col items-center justify-center gap-5 md:w-1/2"></div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section>
+      <div class="px-5 flex flex-col justify-center gap-10">
+        <!-- Box -->
+        <div class="h-70 bg-pale-primary rounded-2xl flex flex-col items-center justify-center gap-10 relative lg:h-80">
+          <img class="w-20 absolute left-8 top-5 hidden sm:block animate-pulse" src="assets/Home/67af701a55a8f4a32f888fc6_Hero Vactor.avif" alt="icon" />
+          <img class="w-20 absolute right-10 top-5 hidden lg:right-20 sm:block animate-pulse" src="assets/Home/67af701a0c7172a8f2f36af9_Hero Vactor 2.avif" alt="icon" />
+          <h1 class="text-3xl text-white text-center font-[Grotesk-Bold]">
+            Take the First Step – Start <br />
+            Learning Today!
+          </h1>
+          <button class="w-40 px-5 py-4 rounded-full font-[Grotesk-bold] bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300">Contact Us</button>
+          <img class="w-20 absolute right-5 bottom-5 hidden sm:block animate-pulse" src="assets/Home/67af701a7fe66816db9422cd_Hero Vactor 4.avif" alt="icon" />
+          <img class="w-20 absolute left-5 bottom-10 hidden lg:left-30 sm:block animate-pulse" src="assets/Home/67af701acb74e60e725c6099_Hero Vactor 3.avif" alt="icon" />
+        </div>
+        <!-- information -->
+        <div class="flex flex-col gap-5 md:items-center">
+          <img class="w-40 md:hidden" src="assets/Logo/67b8b94dcbde10be55c98ee8_Logo PNG.png" alt="logo" />
+          <p class="font-[Grotesk-Medium] text-[18px] md:text-2xl md:text-center">Lorem Ipsum ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+          <div class="text-2xl flex items-center gap-5">
+            <a href="https://www.instagram.com/ramyar_ib?igsh=MTFjeTM5eXU1M3hzOA==">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://t.me/Mr_kurd56">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://github.com/RamyarDev">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div>
+            <button class="w-40 px-5 py-4 rounded-full font-[Grotesk-bold] text-white bg-pale-primary hover:bg-black hover:text-white cursor-pointer transition-all duration-300 md:w-80">
+              Contact Us
+            </button>
+          </div>
+        </div>
+        <!-- Links -->
+        <div class="flex justify-between gap-5 py-5 md:justify-around">
+          <div class="flex flex-col gap-2">
+            <h1 class="text-[18px] font-[Grotesk-Bold] md:text-2xl lg:text-3xl">Company</h1>
+            <div class="flex flex-col gap-2">
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">Home</a>
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">About</a>
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">Courses</a>
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">Blog</a>
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">Contact</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1 class="text-[18px] font-[Grotesk-Bold] md:text-2xl lg:text-3xl">Template</h1>
+            <div class="flex flex-col gap-2">
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">Style Guide</a>
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">Licenses</a>
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">Changelog</a>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h1 class="text-[18px] font-[Grotesk-Bold] md:text-2xl lg:text-3xl">Contact</h1>
+            <div class="flex flex-col gap-2">
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">0993-025-8692</a>
+              <a class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl" href="#">RamyarDev17@gmail.com</a>
+              <p class="text-[17px] font-[Grotesk-Medium] hover:text-pale-primary transition-all md:text-[18px] lg:text-2xl">
+                6391 Elgin St. Celina,<br />
+                Delaware 10299
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://kit.fontawesome.com/0276ad4206.js" crossorigin="anonymous"></script>
+    <script type="module" src="./dist/app.js"></script>
+  </body>
+</html>

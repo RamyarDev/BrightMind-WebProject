@@ -11,6 +11,11 @@ export interface accordionBoxesTypes {
   title: string;
   description: string;
 }
+export interface expertTeamTyeps {
+  image: string;
+  name: string;
+  career: string;
+}
 // Boxes-Data
 export const coursesData: Course[] = [
   // Box-1
@@ -74,6 +79,7 @@ export const coursesData: Course[] = [
     price: 62,
   },
 ];
+// Accordion-Data
 export const accordionBoxesData: accordionBoxesTypes[] = [
   // Box-1
   {
@@ -104,5 +110,38 @@ export const accordionBoxesData: accordionBoxesTypes[] = [
     title: "What Is BrightMind?",
     description:
       " Our instructors are industry experts with years of experience in their respective fields. They bring real-world insights and practical knowledge to the courses to ensure that learners gain valuable and applicable skills.",
+  },
+];
+// Expert-Team-Data
+export const expertTeamData: expertTeamTyeps[] = [
+  {
+    image: "assets/About/67b1daa184a678ab1b123917_Team.avif",
+    name: "Marvin McKinney",
+    career: "Business Development",
+  },
+  {
+    image: "assets/About/67b364fc529a72a36cd8d291_Team Member 2.avif",
+    name: "Cody Fisher",
+    career: "UI/UX Designer",
+  },
+  {
+    image: "assets/About/67b364fd8e33e7004480ec76_Team Member 3.avif",
+    name: "Bessie Cooper",
+    career: "Software Developer",
+  },
+  {
+    image: "assets/About/67b364fc516402875e4d4852_Team Member 4.avif",
+    name: "Wade Warren",
+    career: "Meta Marketer",
+  },
+  {
+    image: "assets/About/67b364fc997ded7b0d478cd4_Team Member 5.avif",
+    name: "Ronald Richards",
+    career: "Graphic Designer",
+  },
+  {
+    image: "assets/About/67b364fc02622313460d1f5d_Team Member 6.avif",
+    name: "Albert Flores",
+    career: "Digital Marketer",
   },
 ];
